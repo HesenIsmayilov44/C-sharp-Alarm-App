@@ -46,9 +46,11 @@
             this.cmbbx_partOfDay = new System.Windows.Forms.ComboBox();
             this.hourInput = new System.Windows.Forms.NumericUpDown();
             this.lbl_selectSoundText = new System.Windows.Forms.Label();
+            this.panel_Main = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.secondInput)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.minuteInput)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hourInput)).BeginInit();
+            this.panel_Main.SuspendLayout();
             this.SuspendLayout();
             // 
             // timer_now
@@ -69,7 +71,7 @@
             this.btn_start.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_start.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_start.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_start.Location = new System.Drawing.Point(159, 377);
+            this.btn_start.Location = new System.Drawing.Point(123, 359);
             this.btn_start.Name = "btn_start";
             this.btn_start.Size = new System.Drawing.Size(103, 33);
             this.btn_start.TabIndex = 3;
@@ -87,7 +89,7 @@
             this.btn_stop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_stop.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_stop.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_stop.Location = new System.Drawing.Point(301, 377);
+            this.btn_stop.Location = new System.Drawing.Point(265, 359);
             this.btn_stop.Name = "btn_stop";
             this.btn_stop.Size = new System.Drawing.Size(103, 33);
             this.btn_stop.TabIndex = 4;
@@ -110,7 +112,7 @@
             "MoodyLoop",
             "ShakeYourBody",
             "UpbeatFunk"});
-            this.cmbbx_sound.Location = new System.Drawing.Point(194, 228);
+            this.cmbbx_sound.Location = new System.Drawing.Point(158, 210);
             this.cmbbx_sound.Name = "cmbbx_sound";
             this.cmbbx_sound.Size = new System.Drawing.Size(137, 28);
             this.cmbbx_sound.TabIndex = 6;
@@ -120,7 +122,7 @@
             this.lbl_now.AutoSize = true;
             this.lbl_now.Font = new System.Drawing.Font("Microsoft Sans Serif", 54F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_now.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.lbl_now.Location = new System.Drawing.Point(93, 37);
+            this.lbl_now.Location = new System.Drawing.Point(57, 19);
             this.lbl_now.Name = "lbl_now";
             this.lbl_now.Size = new System.Drawing.Size(453, 82);
             this.lbl_now.TabIndex = 8;
@@ -132,7 +134,7 @@
             this.lbl_nowText.AutoSize = true;
             this.lbl_nowText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_nowText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.lbl_nowText.Location = new System.Drawing.Point(55, 73);
+            this.lbl_nowText.Location = new System.Drawing.Point(19, 55);
             this.lbl_nowText.Name = "lbl_nowText";
             this.lbl_nowText.Size = new System.Drawing.Size(35, 16);
             this.lbl_nowText.TabIndex = 9;
@@ -144,7 +146,7 @@
             this.lbl_alarmIsSet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(9)))), ((int)(((byte)(9)))));
             this.lbl_alarmIsSet.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_alarmIsSet.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.lbl_alarmIsSet.Location = new System.Drawing.Point(207, 294);
+            this.lbl_alarmIsSet.Location = new System.Drawing.Point(167, 276);
             this.lbl_alarmIsSet.Name = "lbl_alarmIsSet";
             this.lbl_alarmIsSet.Size = new System.Drawing.Size(42, 16);
             this.lbl_alarmIsSet.TabIndex = 10;
@@ -155,7 +157,7 @@
             this.secondInput.BackColor = System.Drawing.Color.Black;
             this.secondInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.secondInput.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.secondInput.Location = new System.Drawing.Point(318, 156);
+            this.secondInput.Location = new System.Drawing.Point(282, 138);
             this.secondInput.Maximum = new decimal(new int[] {
             59,
             0,
@@ -170,7 +172,7 @@
             this.minuteInput.BackColor = System.Drawing.Color.Black;
             this.minuteInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.minuteInput.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.minuteInput.Location = new System.Drawing.Point(229, 156);
+            this.minuteInput.Location = new System.Drawing.Point(193, 138);
             this.minuteInput.Maximum = new decimal(new int[] {
             59,
             0,
@@ -185,7 +187,7 @@
             this.lbl_twoDots1.AutoSize = true;
             this.lbl_twoDots1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_twoDots1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.lbl_twoDots1.Location = new System.Drawing.Point(200, 156);
+            this.lbl_twoDots1.Location = new System.Drawing.Point(164, 138);
             this.lbl_twoDots1.Name = "lbl_twoDots1";
             this.lbl_twoDots1.Size = new System.Drawing.Size(23, 31);
             this.lbl_twoDots1.TabIndex = 14;
@@ -196,7 +198,7 @@
             this.lbl_twoDots2.AutoSize = true;
             this.lbl_twoDots2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_twoDots2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.lbl_twoDots2.Location = new System.Drawing.Point(289, 156);
+            this.lbl_twoDots2.Location = new System.Drawing.Point(253, 138);
             this.lbl_twoDots2.Name = "lbl_twoDots2";
             this.lbl_twoDots2.Size = new System.Drawing.Size(23, 31);
             this.lbl_twoDots2.TabIndex = 15;
@@ -207,7 +209,7 @@
             this.lbl_setAlarmText.AutoSize = true;
             this.lbl_setAlarmText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_setAlarmText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.lbl_setAlarmText.Location = new System.Drawing.Point(55, 169);
+            this.lbl_setAlarmText.Location = new System.Drawing.Point(19, 151);
             this.lbl_setAlarmText.Name = "lbl_setAlarmText";
             this.lbl_setAlarmText.Size = new System.Drawing.Size(66, 16);
             this.lbl_setAlarmText.TabIndex = 16;
@@ -223,7 +225,7 @@
             this.cmbbx_partOfDay.Items.AddRange(new object[] {
             "AM",
             "PM"});
-            this.cmbbx_partOfDay.Location = new System.Drawing.Point(406, 156);
+            this.cmbbx_partOfDay.Location = new System.Drawing.Point(370, 138);
             this.cmbbx_partOfDay.Name = "cmbbx_partOfDay";
             this.cmbbx_partOfDay.Size = new System.Drawing.Size(71, 39);
             this.cmbbx_partOfDay.TabIndex = 17;
@@ -233,7 +235,7 @@
             this.hourInput.BackColor = System.Drawing.Color.Black;
             this.hourInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hourInput.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.hourInput.Location = new System.Drawing.Point(140, 157);
+            this.hourInput.Location = new System.Drawing.Point(104, 139);
             this.hourInput.Maximum = new decimal(new int[] {
             23,
             0,
@@ -248,11 +250,33 @@
             this.lbl_selectSoundText.AutoSize = true;
             this.lbl_selectSoundText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_selectSoundText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.lbl_selectSoundText.Location = new System.Drawing.Point(66, 234);
+            this.lbl_selectSoundText.Location = new System.Drawing.Point(30, 216);
             this.lbl_selectSoundText.Name = "lbl_selectSoundText";
             this.lbl_selectSoundText.Size = new System.Drawing.Size(88, 16);
             this.lbl_selectSoundText.TabIndex = 19;
             this.lbl_selectSoundText.Text = "Select Sound";
+            // 
+            // panel_Main
+            // 
+            this.panel_Main.Controls.Add(this.btn_stop);
+            this.panel_Main.Controls.Add(this.lbl_selectSoundText);
+            this.panel_Main.Controls.Add(this.btn_start);
+            this.panel_Main.Controls.Add(this.hourInput);
+            this.panel_Main.Controls.Add(this.cmbbx_sound);
+            this.panel_Main.Controls.Add(this.cmbbx_partOfDay);
+            this.panel_Main.Controls.Add(this.lbl_now);
+            this.panel_Main.Controls.Add(this.lbl_setAlarmText);
+            this.panel_Main.Controls.Add(this.lbl_nowText);
+            this.panel_Main.Controls.Add(this.lbl_twoDots2);
+            this.panel_Main.Controls.Add(this.lbl_alarmIsSet);
+            this.panel_Main.Controls.Add(this.lbl_twoDots1);
+            this.panel_Main.Controls.Add(this.secondInput);
+            this.panel_Main.Controls.Add(this.minuteInput);
+            this.panel_Main.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_Main.Location = new System.Drawing.Point(0, 0);
+            this.panel_Main.Name = "panel_Main";
+            this.panel_Main.Size = new System.Drawing.Size(513, 436);
+            this.panel_Main.TabIndex = 20;
             // 
             // Main
             // 
@@ -260,26 +284,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(9)))), ((int)(((byte)(9)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(581, 436);
-            this.Controls.Add(this.lbl_selectSoundText);
-            this.Controls.Add(this.hourInput);
-            this.Controls.Add(this.cmbbx_partOfDay);
-            this.Controls.Add(this.lbl_setAlarmText);
-            this.Controls.Add(this.lbl_twoDots2);
-            this.Controls.Add(this.lbl_twoDots1);
-            this.Controls.Add(this.minuteInput);
-            this.Controls.Add(this.secondInput);
-            this.Controls.Add(this.lbl_alarmIsSet);
-            this.Controls.Add(this.lbl_nowText);
-            this.Controls.Add(this.lbl_now);
-            this.Controls.Add(this.cmbbx_sound);
-            this.Controls.Add(this.btn_stop);
-            this.Controls.Add(this.btn_start);
+            this.ClientSize = new System.Drawing.Size(513, 436);
+            this.Controls.Add(this.panel_Main);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Alarm";
@@ -287,8 +299,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.secondInput)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.minuteInput)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hourInput)).EndInit();
+            this.panel_Main.ResumeLayout(false);
+            this.panel_Main.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -309,6 +322,7 @@
         private System.Windows.Forms.ComboBox cmbbx_partOfDay;
         private System.Windows.Forms.NumericUpDown hourInput;
         private System.Windows.Forms.Label lbl_selectSoundText;
+        private System.Windows.Forms.Panel panel_Main;
     }
 }
 
