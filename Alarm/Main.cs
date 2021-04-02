@@ -15,6 +15,7 @@ namespace Alarm
     {
         private SoundPlayer playMusic;
         string assignedTime;
+        bool startedAlarm = false;
         public Main()
         {
             InitializeComponent();
@@ -46,29 +47,38 @@ namespace Alarm
 
         private void btn_start_Click(object sender, EventArgs e)
         {
-            lbl_alarmIsSet.Text = "alarm is available";
-            string hour = hourInput.Value.ToString();
-            string minute = minuteInput.Value.ToString();
-            string second = secondInput.Value.ToString();
-            timer_check.Start();
-            if (hourInput.Value.ToString().Length == 1 && DateTime.Now.Hour.ToString().Length == 2)
+            if (!startedAlarm)
             {
-                hour = "0" + hourInput.Value.ToString();
-            }
-            if (minuteInput.Value.ToString().Length == 1)
-            {
-                minute = "0" + minuteInput.Value.ToString();
-            }
-            if (secondInput.Value.ToString().Length == 1)
-            {
-                second = "0" + secondInput.Value.ToString();
-            }
+                startedAlarm = true;
+                lbl_alarmIsSet.Text = "alarm is available";
+                string hour = hourInput.Value.ToString();
+                string minute = minuteInput.Value.ToString();
+                string second = secondInput.Value.ToString();
+                timer_check.Start();
+                if (hourInput.Value.ToString().Length == 1 && DateTime.Now.Hour.ToString().Length == 2)
+                {
+                    hour = "0" + hourInput.Value.ToString();
+                }
+                if (minuteInput.Value.ToString().Length == 1)
+                {
+                    minute = "0" + minuteInput.Value.ToString();
+                }
+                if (secondInput.Value.ToString().Length == 1)
+                {
+                    second = "0" + secondInput.Value.ToString();
+                }
 
-            assignedTime = hour + ":" + minute + ":" + second;
-            if (cmbbx_partOfDay.Visible == true)
-            {
-                assignedTime =  assignedTime + " " + cmbbx_partOfDay.SelectedItem.ToString();
+                assignedTime = hour + ":" + minute + ":" + second;
+                if (cmbbx_partOfDay.Visible == true)
+                {
+                    assignedTime = assignedTime + " " + cmbbx_partOfDay.SelectedItem.ToString();
+                }
             }
+            else
+            {
+                MessageBox.Show("The alarm already started. You must stop the alarm and start a new one :)");
+            }
+            
         }
 
         private void timer_check_Tick(object sender, EventArgs e)
@@ -87,19 +97,27 @@ namespace Alarm
 
         private void btn_stop_Click(object sender, EventArgs e)
         {
-            lbl_alarmIsSet.Text = "alarm was deactivated";
-            timer_check.Stop();
-            try
+            if (startedAlarm == true)
             {
-                playMusic.Stop();
+                lbl_alarmIsSet.Text = "alarm was deactivated";
+                timer_check.Stop();
+                try
+                {
+                    playMusic.Stop();
+                }
+                catch
+                {
+                    MessageBox.Show("WARNING!!!  Alarm didn't played");
+                }
+                startedAlarm = false;
             }
-            catch
+            else
             {
-                MessageBox.Show("WARNING!!!  Alarm didn't played");
+                MessageBox.Show("First you must start the alarm");
             }
-            
-            
-            
+
+
+
         }
     }
 }

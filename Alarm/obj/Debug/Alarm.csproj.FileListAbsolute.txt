@@ -8,3 +8,13 @@ C:\Users\Hesen\Desktop\dersler\2.kurs_2.term\Müasir Proqramlaşdırma dilləri 
 C:\Users\Hesen\Desktop\dersler\2.kurs_2.term\Müasir Proqramlaşdırma dilləri Rasim Mahmudov\FormApps\Alarm\Alarm\obj\Debug\Alarm.csproj.CoreCompileInputs.cache
 C:\Users\Hesen\Desktop\dersler\2.kurs_2.term\Müasir Proqramlaşdırma dilləri Rasim Mahmudov\FormApps\Alarm\Alarm\obj\Debug\Alarm.exe
 C:\Users\Hesen\Desktop\dersler\2.kurs_2.term\Müasir Proqramlaşdırma dilləri Rasim Mahmudov\FormApps\Alarm\Alarm\obj\Debug\Alarm.pdb
+C:\Users\Hesen\Desktop\dersler\2.kurs_2.term\Müasir Proqramlaşdırma dilləri Rasim Mahmudov\FormApps\Alarm2\C-sharp-Alarm-App\Alarm\bin\Debug\Alarm.exe.config
+C:\Users\Hesen\Desktop\dersler\2.kurs_2.term\Müasir Proqramlaşdırma dilləri Rasim Mahmudov\FormApps\Alarm2\C-sharp-Alarm-App\Alarm\bin\Debug\Alarm.exe
+C:\Users\Hesen\Desktop\dersler\2.kurs_2.term\Müasir Proqramlaşdırma dilləri Rasim Mahmudov\FormApps\Alarm2\C-sharp-Alarm-App\Alarm\bin\Debug\Alarm.pdb
+C:\Users\Hesen\Desktop\dersler\2.kurs_2.term\Müasir Proqramlaşdırma dilləri Rasim Mahmudov\FormApps\Alarm2\C-sharp-Alarm-App\Alarm\obj\Debug\Alarm.csprojAssemblyReference.cache
+C:\Users\Hesen\Desktop\dersler\2.kurs_2.term\Müasir Proqramlaşdırma dilləri Rasim Mahmudov\FormApps\Alarm2\C-sharp-Alarm-App\Alarm\obj\Debug\Alarm.Main.resources
+C:\Users\Hesen\Desktop\dersler\2.kurs_2.term\Müasir Proqramlaşdırma dilləri Rasim Mahmudov\FormApps\Alarm2\C-sharp-Alarm-App\Alarm\obj\Debug\Alarm.Properties.Resources.resources
+C:\Users\Hesen\Desktop\dersler\2.kurs_2.term\Müasir Proqramlaşdırma dilləri Rasim Mahmudov\FormApps\Alarm2\C-sharp-Alarm-App\Alarm\obj\Debug\Alarm.csproj.GenerateResource.cache
+C:\Users\Hesen\Desktop\dersler\2.kurs_2.term\Müasir Proqramlaşdırma dilləri Rasim Mahmudov\FormApps\Alarm2\C-sharp-Alarm-App\Alarm\obj\Debug\Alarm.csproj.CoreCompileInputs.cache
+C:\Users\Hesen\Desktop\dersler\2.kurs_2.term\Müasir Proqramlaşdırma dilləri Rasim Mahmudov\FormApps\Alarm2\C-sharp-Alarm-App\Alarm\obj\Debug\Alarm.exe
+C:\Users\Hesen\Desktop\dersler\2.kurs_2.term\Müasir Proqramlaşdırma dilləri Rasim Mahmudov\FormApps\Alarm2\C-sharp-Alarm-App\Alarm\obj\Debug\Alarm.pdb

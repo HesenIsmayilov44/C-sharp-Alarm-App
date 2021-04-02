@@ -45,6 +45,7 @@
             this.lbl_setAlarmText = new System.Windows.Forms.Label();
             this.cmbbx_partOfDay = new System.Windows.Forms.ComboBox();
             this.hourInput = new System.Windows.Forms.NumericUpDown();
+            this.lbl_selectSoundText = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.secondInput)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.minuteInput)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hourInput)).BeginInit();
@@ -242,6 +243,17 @@
             this.hourInput.Size = new System.Drawing.Size(54, 38);
             this.hourInput.TabIndex = 18;
             // 
+            // lbl_selectSoundText
+            // 
+            this.lbl_selectSoundText.AutoSize = true;
+            this.lbl_selectSoundText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_selectSoundText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.lbl_selectSoundText.Location = new System.Drawing.Point(66, 234);
+            this.lbl_selectSoundText.Name = "lbl_selectSoundText";
+            this.lbl_selectSoundText.Size = new System.Drawing.Size(88, 16);
+            this.lbl_selectSoundText.TabIndex = 19;
+            this.lbl_selectSoundText.Text = "Select Sound";
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -249,6 +261,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(9)))), ((int)(((byte)(9)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(581, 436);
+            this.Controls.Add(this.lbl_selectSoundText);
             this.Controls.Add(this.hourInput);
             this.Controls.Add(this.cmbbx_partOfDay);
             this.Controls.Add(this.lbl_setAlarmText);
@@ -295,6 +308,7 @@
         private System.Windows.Forms.Label lbl_setAlarmText;
         private System.Windows.Forms.ComboBox cmbbx_partOfDay;
         private System.Windows.Forms.NumericUpDown hourInput;
+        private System.Windows.Forms.Label lbl_selectSoundText;
     }
 }
 
