@@ -44,6 +44,19 @@ namespace Alarm
                 cmbbx_partOfDay.Visible = false;
             }
         }
+        private void timer_check_Tick(object sender, EventArgs e)
+        {
+            if (lbl_now.Text == assignedTime)
+            {
+                lbl_alarmIsSet.Text = "alarm was played!!!";
+                timer_check.Stop();
+                string sound = cmbbx_sound.SelectedItem.ToString();
+                playMusic = new SoundPlayer("Sounds/" + sound + ".wav");
+                playMusic.Play();
+                playMusic.PlayLooping();
+                MessageBox.Show("Vaxtdır...");
+            }
+        }
 
         private void btn_start_Click(object sender, EventArgs e)
         {
@@ -81,19 +94,6 @@ namespace Alarm
             
         }
 
-        private void timer_check_Tick(object sender, EventArgs e)
-        {
-            if(lbl_now.Text == assignedTime)
-            {
-                lbl_alarmIsSet.Text = "alarm was played!!!";
-                timer_check.Stop();
-                string sound = cmbbx_sound.SelectedItem.ToString();
-                playMusic = new SoundPlayer("Sounds/" + sound + ".wav");
-                playMusic.Play();
-                playMusic.PlayLooping(); 
-                MessageBox.Show("Vaxtdır...");
-            }
-        }
 
         private void btn_stop_Click(object sender, EventArgs e)
         {
@@ -115,9 +115,7 @@ namespace Alarm
             {
                 MessageBox.Show("First you must start the alarm");
             }
-
-
-
+       
         }
     }
 }

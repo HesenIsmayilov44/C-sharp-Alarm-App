@@ -258,6 +258,7 @@
             // 
             // panel_Main
             // 
+            this.panel_Main.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel_Main.Controls.Add(this.btn_stop);
             this.panel_Main.Controls.Add(this.lbl_selectSoundText);
             this.panel_Main.Controls.Add(this.btn_start);
